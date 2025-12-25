@@ -1,0 +1,60 @@
+.presentation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: vw(12);
+
+  @include tablet {
+    padding-bottom: 14px;
+    gap: 12px;
+  }
+
+  @include large-mobile {
+    display: none;
+  }
+}
+
+.presentation__title {
+  margin: 0;
+  max-width: vw(160);
+
+  font-family: $primary-font;
+  font-size: fluid-font(13);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
+
+  opacity: 0.6;
+}
+
+.presentation__files-list {
+  @include list-reset;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: vw(5);
+}
+
+.presentation__files-link {
+  @include link-reset;
+  @include short-button-effects;
+
+  display: block;
+  padding: vw(16) vw(15);
+
+  font-family: $primary-font;
+  font-size: fluid-font(14);
+  line-height: 1.2;
+  font-weight: 600;
+
+  background-color: #ffffff;
+  border-radius: vw(15);
+
+  @include tablet {
+    padding: 14px;
+
+    font-size: 13px;
+  }
+}

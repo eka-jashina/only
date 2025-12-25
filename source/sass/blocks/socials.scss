@@ -1,0 +1,38 @@
+.socials__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: vw(5);
+
+  @include tablet {
+    gap: 5px;
+  }
+}
+
+.socials__link {
+  @include link-reset;
+  @include short-button-effects;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: vw(5);
+  min-width: vw(48);
+  min-height: vw(48);
+
+  font-family: $primary-font;
+  font-size: fluid-font(14);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+
+  background-color: #ffffff;
+  border-radius: vw(12);
+
+  @include tablet {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,36 @@
+<section class="section awards">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">награды</h2>
+      <div class="section__description">
+        <p>За 10 лет активной работы мы завоевали более 150 призовых мест </p>
+        <p>Каждый год подтверждаем высокие позиции в Рейтинге Рунета в сегменте крупного B2B-бизнеса. Побеждаем на международных и российских конкурсах в номинациях digital-дизайна и разработки сайтов.</p>
+      </div>
+    </div>
+    <div class="awards__content">
+      <div class="awards__achievements achievements">
+        <h3 class="visually-hidden">Список полученных премий</h3>
+        <ul class="achievements__list">
+          {{#each awards}}
+            <li class="achievements__item">
+              <a href="{{link}}">{{decorateTitle title decorations=decorations iconSet="awards"}}</a>
+              <span class="achievements__quantity">{{quantity}}</span>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="awards__prizes prizes">
+        <h3 class="visually-hidden">Лучшие призовые места</h3>
+        <ul class="prizes__list scroll-container">
+          {{#each prizes}}
+            <li class="prizes__item">
+              <h4>{{title}}</h4>
+              <span>{{place}}</span>
+              <p>{{category}}</p>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+.slogan {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: vw(5) vw(15);
+  max-width: vw(292);
+
+  @include tablet {
+    grid-template-columns: auto 1fr;
+    gap: fluid-range(10, 15) fluid-range(5, 8);
+    max-width: 162px;
+  }
+}
+
+.slogan__text {
+  font-size: fluid-font(18);
+  line-height: 1.25;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: -0.01em;
+
+  @include tablet {
+    align-self: flex-end;
+    justify-items: flex-start;
+
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+.slogan__text--age {
+  grid-row: 1 / 3;
+  align-self: flex-end;
+
+  font-family: $primary-font;
+  font-size: fluid-font(55);
+  line-height: 0.9;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+
+  @include tablet {
+    grid-row: 1 / 2;
+
+    font-size: fluid-range(32, 38);
+  }
+}
+
+.slogan__text--description {
+  font-family: $primary-font;
+  font-size: fluid-font(13);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+
+  opacity: 0.6;
+
+  @include tablet {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,42 @@
+.word-decor__word,
+.word-decor__words,
+.word-decor__icon,
+.word-decor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.24em;
+}
+
+.word-decor__icon img {
+  @include tablet {
+    transform: scale(1.5);
+  }
+}
+
+.word-decor__word,
+.word-decor--group {
+  flex-wrap: nowrap;
+}
+
+.word-decor--group {
+  gap: 0;
+}
+
+.word-decor__highlight {
+  display: flex;
+  padding: vw(8) vw(18) vw(5);
+
+  background-color: #00ffa9;
+  border-radius: vw(154);
+
+  transition: background-color 0.3s ease-in-out;
+
+  @include tablet {
+    padding: 0 17px;
+  }
+}
+
+.word-decor--group .word-decor__icon {
+  align-self: stretch;
+}

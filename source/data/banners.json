@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Формируем ценность бренда ЖК в digital - среде",
+    "decorations": [
+      {
+        "word": "Формируем",
+        "iconAfter": {
+          "name": "graph",
+          "width": 40,
+          "height": 31
+        }
+      },
+      {
+        "word": "ценность",
+        "iconBefore": {
+          "name": "heart",
+          "width": 42,
+          "height": 44
+        }
+      },
+      {
+        "word": "ЖК",
+        "iconBefore": {
+          "name": "house",
+          "width": 40,
+          "height": 40
+        }
+      },
+      {
+        "group": ["в", "digital", "-", "среде"],
+        "highlight": true,
+        "iconBefore": {
+          "name": "globus",
+          "highlight": true,
+          "width": 29,
+          "height": 29
+        }
+      }
+    ],
+    "link": "#",
+    "category": "недвижимость",
+    "description": "Создаем digital-пространство для девелоперов и проектов ЖК, находя баланс идентичности бренда и сервисности.",
+    "img": "property",
+    "modifier": "property"
+  },
+  {
+    "title": "Проектируем мобильные приложения",
+    "decorations": [
+      {
+        "word": "мобильные",
+        "iconBefore": {
+          "name": "mobile",
+          "highlight": true,
+          "width": 19,
+          "height": 24
+        }
+      }
+    ],
+    "link": "#",
+    "category": "Mobile App",
+    "description": "Разрабатываем приложения для мобильных устройств, решая реальные запросы пользователей.",
+    "img": "mobile",
+    "modifier": "mobile"
+  },
+  {
+    "title": "Формируем ценность бренда ЖК в digital - среде",
+    "decorations": [
+      {
+        "word": "Формируем",
+        "iconAfter": {
+          "name": "graph",
+          "width": 40,
+          "height": 31
+        }
+      },
+      {
+        "word": "ценность",
+        "iconBefore": {
+          "name": "heart",
+          "width": 42,
+          "height": 44
+        }
+      },
+      {
+        "word": "ЖК",
+        "iconBefore": {
+          "name": "house",
+          "width": 40,
+          "height": 40
+        }
+      },
+      {
+        "group": ["в", "digital", "-", "среде"],
+        "highlight": true,
+        "iconBefore": {
+          "name": "globus",
+          "highlight": true,
+          "width": 29,
+          "height": 29
+        }
+      }
+    ],
+    "link": "#",
+    "category": "недвижимость",
+    "description": "Создаем digital-пространство для девелоперов и проектов ЖК, находя баланс идентичности бренда и сервисности.",
+    "img": "property",
+    "modifier": "property"
+  },
+  {
+    "title": "Проектируем мобильные приложения",
+    "decorations": [
+      {
+        "word": "мобильные",
+        "iconBefore": {
+          "name": "mobile",
+          "highlight": true,
+          "width": 19,
+          "height": 24
+        }
+      }
+    ],
+    "link": "#",
+    "category": "Mobile App",
+    "description": "Разрабатываем приложения для мобильных устройств, решая реальные запросы пользователей.",
+    "img": "mobile",
+    "modifier": "mobile"
+  }
+]

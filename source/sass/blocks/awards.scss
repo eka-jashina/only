@@ -1,0 +1,16 @@
+.awards__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: vw(20);
+
+  @include large-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @include large-mobile {
+    gap: 33px;
+    padding-top: 15px;
+  }
+}

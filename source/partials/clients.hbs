@@ -1,0 +1,19 @@
+<section class="section clients">
+  <div class="container">
+    <div class="section__head clients__head">
+      <h2 class="visually-hidden">клиенты</h2>
+      <div class="section__description clients__description">
+        <p>20 клиентов — крупнейшие компании из списка Forbes. Более 100 реализованных проектов</p>
+      </div>
+    </div>
+    <ul class="clients__list">
+      {{#each clients}}
+        <li class="clients__item">
+          <a class="clients__link scale-img" href="{{link}}" style="--img-w: {{img-width}}; --img-h: {{img-height}}">
+              <img src="img/content/clients/{{img}}.svg" width="{{img-width}}" height="{{img-height}}" alt="{{img-alt}}" loading="lazy">
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

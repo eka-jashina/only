@@ -1,0 +1,28 @@
+.button {
+  @include button-reset;
+  @include primary-button-effects;
+
+  padding: vw(22);
+
+  font-family: $primary-font;
+  font-size: fluid-font(14);
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: lowercase;
+  letter-spacing: -0.04em;
+
+  background-color: #0e0e0e;
+  border-radius: vw(15);
+
+  &:not(:last-child) {
+    margin-right: vw(10);
+    margin-bottom: vw(10);
+  }
+
+  @include tablet {
+    padding: 15px;
+
+    border-radius: 15px;
+  }
+}

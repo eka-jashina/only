@@ -1,0 +1,38 @@
+<article class="banner banner--{{modifier}}">
+  <div class="banner__content anim-block anim-once">
+    <h3>{{decorateTitle title decorations=decorations iconSet="banner"}}</h3>
+    <span>{{category}}</span>
+    <p>{{description}}</p>
+    <a class="banner__link button" href="{{link}}">подробнее</a>
+  </div>
+  <ul class="banner__gallery">
+    <li class="banner__img anim-block">
+      <picture>
+        <source type="image/webp"
+          srcset="img/content/banners/{{img}}/{{img}}-1.webp 1x, img/content/banners/{{img}}/{{img}}-1@2x.webp 2x">
+        <img src="img/content/banners/{{img}}/{{img}}-1.jpg" srcset="img/content/banners/{{img}}/{{img}}-1@2x.jpg" alt="Пример фирменного стиля" loading="lazy">
+      </picture>
+    </li>
+    <li class="banner__img anim-block">
+      <picture>
+        <source type="image/webp"
+          srcset="img/content/banners/{{img}}/{{img}}-2.webp 1x, img/content/banners/{{img}}/{{img}}-2@2x.webp 2x">
+        <img src="img/content/banners/{{img}}/{{img}}-2.jpg" srcset="img/content/banners/{{img}}/{{img}}-2@2x.jpg" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+      </picture>
+    </li>
+    <li class="banner__img anim-block">
+      <picture>
+        <source type="image/webp"
+          srcset="img/content/banners/{{img}}/{{img}}-3.webp 1x, img/content/banners/{{img}}/{{img}}-3@2x.webp 2x">
+        <img src="img/content/banners/{{img}}/{{img}}-3.jpg" srcset="img/content/banners/{{img}}/{{img}}-3@2x.jpg" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+      </picture>
+    </li>
+    <li class="banner__img anim-block">
+      <picture>
+        <source type="image/webp"
+          srcset="img/content/banners/{{img}}/{{img}}-4.webp 1x, img/content/banners/{{img}}/{{img}}-4@2x.webp 2x">
+        <img src="img/content/banners/{{img}}/{{img}}-4.jpg" srcset="img/content/banners/{{img}}/{{img}}-4@2x.jpg" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+      </picture>
+    </li>
+  </ul>
+</article>

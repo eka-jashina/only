@@ -1,0 +1,48 @@
+<a class="projects__link large-project" href="{{link}}" style="  background-image: image-set(
+      url('img/decor/large-projects-backgrounds/{{img}}-background.webp') 1x,
+      url('img/decor/large-projects-backgrounds/{{img}}-background@2x.webp') 2x,
+      url('img/decor/large-projects-backgrounds/{{img}}-background.png') 1x,
+      url('img/decor/large-projects-backgrounds/{{img}}-background@2x.png') 2x
+    );">
+  <article class="large-project__card">
+    <div class="large-project__content">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <span>{{category}}</span>
+    </div>
+    <ul class="large-project__gallery">
+      <li class="large-project__img scale-img" style="--img-w: 64">
+        <picture>
+          <source width="64" height="64" type="image/webp"
+            srcset="img/content/large-projects/{{img}}/{{img}}-1.webp 1x, img/content/large-projects/{{img}}/{{img}}-1@2x.webp 2x">
+          <img src="img/content/large-projects/{{img}}/{{img}}-1.jpg" srcset="img/content/large-projects/{{img}}/{{img}}-1@2x.jpg" width="64"
+            height="64" alt="Логотип компании" loading="lazy">
+        </picture>
+      </li>
+      <li class="large-project__img scale-img" style="--img-w: 64">
+        <picture>
+          <source width="64" height="64" type="image/webp"
+            srcset="img/content/large-projects/{{img}}/{{img}}-2.webp 1x, img/content/large-projects/{{img}}/{{img}}-2@2x.webp 2x">
+          <img src="img/content/large-projects/{{img}}/{{img}}-2.jpg" srcset="img/content/large-projects/{{img}}/{{img}}-2@2x.jpg" width="64"
+            height="64" alt="Пример фирменного стиля" loading="lazy">
+        </picture>
+      </li>
+      <li class="large-project__img scale-img" style="--img-w: 64">
+        <picture>
+          <source width="64" height="64" type="image/webp"
+            srcset="img/content/large-projects/{{img}}/{{img}}-3.webp 1x, img/content/large-projects/{{img}}/{{img}}-3@2x.webp 2x">
+          <img src="img/content/large-projects/{{img}}/{{img}}-3.jpg" srcset="img/content/large-projects/{{img}}/{{img}}-3@2x.jpg" width="64"
+            height="64" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+        </picture>
+      </li>
+      <li class="large-project__img scale-img" style="--img-w: 64" data-shown="+{{projects-quantity}}">
+        <picture>
+          <source width="64" height="64" type="image/webp"
+            srcset="img/content/large-projects/{{img}}/{{img}}-4.webp 1x, img/content/large-projects/{{img}}/{{img}}-4@2x.webp 2x">
+          <img src="img/content/large-projects/{{img}}/{{img}}-4.jpg" srcset="img/content/large-projects/{{img}}/{{img}}-4@2x.jpg" width="64"
+            height="64" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+        </picture>
+      </li>
+    </ul>
+  </article>
+</a>

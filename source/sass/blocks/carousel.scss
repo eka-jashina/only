@@ -1,0 +1,119 @@
+.carousel {
+  position: relative;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel__track {
+  display: flex;
+  gap: vw(20);
+  transition: transform 0.3s ease-in-out;
+
+  @include tablet {
+    gap: fluid-range(10, 18);
+  }
+}
+
+.carousel__slide {
+  flex: 0 0 vw(330);
+
+  @include tablet {
+    flex: 0 0 fluid-range(315, 361);
+  }
+}
+
+.carousel__navigation {
+  position: absolute;
+  top: vw(-141);
+  right: vw(30);
+
+  display: flex;
+  gap: vw(15);
+
+  @include tablet {
+    top: -150px;
+    right: 20px;
+    gap: 12px;
+  }
+
+  @include large-mobile {
+    display: none;
+  }
+}
+
+.carousel__button {
+  @include button-reset;
+
+  position: relative;
+
+  width: vw(61);
+  height: vw(61);
+
+  background-color: #ffffff;
+  border-radius: vw(15);
+
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: vw(6);
+    height: vw(1.5);
+    background-color: #0e0e0e;
+    transform-origin: left center;
+    transform: translate(-50%);
+    pointer-events: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #0e0e0e;
+
+    &::before,
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  @include tablet {
+    width: 48px;
+    height: 48px;
+
+    &::before,
+    &::after {
+      width: 6px;
+      height: 1.5px;
+    }
+  }
+}

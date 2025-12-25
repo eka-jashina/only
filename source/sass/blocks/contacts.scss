@@ -1,0 +1,135 @@
+.contacts__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  gap: vw(5);
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  @include large-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts--footer .contacts__list {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    gap: 15px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: vw(5);
+
+  &:last-child {
+    padding-top: vw(34);
+  }
+
+  @include tablet {
+    gap: 10px;
+
+    &:last-child {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      padding-top: 0;
+    }
+  }
+
+  @include mobile {
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+
+    &:last-child {
+      padding-top: 15px;
+    }
+  }
+}
+
+.contacts--footer .contacts__item {
+  &:last-child {
+    padding-top: vw(20);
+  }
+
+  @include tablet {
+    &:last-child {
+      gap: 7px;
+      padding-top: 20px;
+    }
+  }
+
+  @include mobile {
+    &:last-child {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding-top: 12px;
+    }
+  }
+}
+
+.contacts__link {
+  @include link-reset;
+  @include link-effects;
+
+  font-size: fluid-font(18);
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+
+  @include tablet {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.contacts--footer .contacts__link {
+  font-size: fluid-font(22);
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.contacts--footer .contacts__item:last-child .contacts__link {
+  font-size: fluid-font(24);
+  letter-spacing: -0.01em;
+}
+
+.contacts__text {
+  font-family: $primary-font;
+  font-size: fluid-font(13);
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: -0.04em;
+
+  opacity: 0.6;
+
+  @include mobile {
+    @include visually-hidden;
+  }
+}
+
+.contacts__icon {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

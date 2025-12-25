@@ -1,0 +1,20 @@
+@use "sass:math";
+
+@function vw($px) {
+  @return calc(($px / $base-width) * 100vw);
+}
+
+@function fluid-font($px, $base: 1440) {
+  @return clamp(#{$px}px, calc(#{$px} / #{$base} * 100vw), #{$px * 999}px);
+}
+
+@function fluid-range($min-px, $max-px, $min-width: 375, $max-width: 820) {
+  $slope: math.div(($max-px - $min-px), ($max-width - $min-width));
+  $intercept: $min-px - $slope * $min-width;
+
+  @return clamp(
+    #{$min-px}px,
+    calc(#{$intercept}px + #{$slope} * 100vw),
+    #{$max-px}px
+  );
+}

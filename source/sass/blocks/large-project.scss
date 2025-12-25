@@ -1,0 +1,150 @@
+.large-project {
+  @include link-reset;
+
+  display: block;
+  min-height: vw(320);
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: vw(30);
+  overflow: hidden;
+
+  transition: border-radius 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    border-radius: vw(70);
+    transform: scale(1.04);
+  }
+
+  @include tablet {
+    min-height: fluid-range(240, 280);
+
+    border-radius: fluid-range(15, 20);
+  }
+
+  @include large-mobile {
+    min-height: 240px;
+  }
+}
+
+.large-project__card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  padding: vw(30);
+  min-height: inherit;
+
+  @include tablet {
+    padding: 20px;
+    padding-bottom: 15px;
+  }
+
+  @include large-mobile {
+    padding-bottom: 18px;
+  }
+}
+
+.large-project__gallery {
+  @include list-reset;
+
+  display: flex;
+  gap: vw(5);
+
+  @include tablet {
+    gap: 7px;
+  }
+}
+
+.large-project__img {
+  position: relative;
+
+  border-radius: vw(12);
+  overflow: hidden;
+
+  &:first-child {
+    outline: 2.5px solid rgba(255, 255, 255, 0.35);
+  }
+
+  @include tablet {
+    width: fluid-range(65, 75);
+
+    border-radius: 12px;
+  }
+}
+
+.large-project__gallery:has(.large-project__img:nth-child(4)) > .large-project__img:last-child {
+  &::before {
+    position: absolute;
+    content: attr(data-shown);
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    font-family: $primary-font;
+    font-size: fluid-font(14);
+    line-height: 1.3;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+
+    background: rgba(14, 14, 14, 0.6);
+  }
+}
+
+.large-project__img img {
+  display: block;
+  width: 100%;
+}
+
+.large-project__content {
+  display: flex;
+  flex-direction: column;
+  gap: vw(5);
+
+  @include tablet {
+    gap: 5px;
+  }
+}
+
+.large-project__content h3 {
+  margin: 0;
+
+  font-family: $primary-font;
+  font-size: fluid-font(18);
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+
+  @include tablet {
+    font-size: 15px;
+  }
+}
+
+.large-project__content p {
+  margin: 0;
+  max-width: vw(230);
+
+  opacity: 0.6;
+
+  @include tablet {
+    max-width: 100%;
+  }
+}
+
+.large-project__content span {
+  order: -1;
+  padding-bottom: vw(5);
+
+  font-size: fluid-font(12);
+  line-height: 1.3;
+  font-weight: 500;
+
+  opacity: 0.6;
+}

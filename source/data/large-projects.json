@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Северсталь",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Промышленность",
+    "link": "#",
+    "img": "severstal",
+    "projects-quantity": "6"
+  },
+  {
+    "title": "Сибур",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Промышленность",
+    "link": "#",
+    "img": "sibur",
+    "projects-quantity": "6"
+  },
+  {
+    "title": "MR Group",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Недвижимость",
+    "link": "#",
+    "img": "mr",
+    "projects-quantity": "2"
+  },
+  {
+    "title": "Главстрой",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Недвижимость",
+    "link": "#",
+    "img": "glavstroy",
+    "projects-quantity": "1"
+  },
+  {
+    "title": "Сибур",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Промышленность",
+    "link": "#",
+    "img": "sibur",
+    "projects-quantity": "6"
+  },
+  {
+    "title": "MR Group",
+    "description": "Адаптация нового брендинга для digital",
+    "category": "Недвижимость",
+    "link": "#",
+    "img": "mr",
+    "projects-quantity": "2"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "title": "AWWWARDS",
+    "link": "#",
+    "quantity": "25",
+    "decorations": [
+      {
+        "word": "AWWWARDS",
+        "iconBefore": {
+          "name": "awwwards",
+          "highlight": true,
+          "width": 40,
+          "height": 40
+        }
+      }
+    ]
+  },
+  {
+    "title": "СSSDA",
+    "link": "#",
+    "quantity": "28",
+    "decorations": [
+      {
+        "word": "СSSDA",
+        "iconBefore": {
+          "name": "css-da",
+          "highlight": true,
+          "width": 38,
+          "height": 38
+        }
+      }
+    ]
+  },
+  {
+    "title": "Mixxrussia",
+    "link": "#",
+    "quantity": "5",
+    "decorations": [
+      {
+        "word": "Mixxrussia",
+        "iconBefore": {
+          "name": "mixxrussia",
+          "highlight": true,
+          "width": 57,
+          "height": 17
+        }
+      }
+    ]
+  },
+  {
+    "title": "G8 Awards",
+    "link": "#",
+    "quantity": "6",
+    "decorations": [
+      {
+        "word": "Awards",
+        "iconBefore": {
+          "name": "g8-awards",
+          "highlight": true,
+          "width": 55,
+          "height": 35
+        }
+      }
+    ]
+  },
+  {
+    "title": "Среда",
+    "link": "#",
+    "quantity": "5",
+    "decorations": [
+      {
+        "word": "Среда",
+        "iconBefore": {
+          "name": "sreda",
+          "highlight": true,
+          "width": 33,
+          "height": 33
+        }
+      }
+    ]
+  },
+  {
+    "title": "Рейтинг Рунета",
+    "link": "#",
+    "quantity": "22",
+    "decorations": [
+      {
+        "word": "Рунета",
+        "iconBefore": {
+          "name": "runet-rating",
+          "highlight": true,
+          "width": 28,
+          "height": 36
+        }
+      }
+    ]
+  },
+  {
+    "title": "Золотой Сайт",
+    "link": "#",
+    "quantity": "40",
+    "decorations": [
+      {
+        "word": "Сайт",
+        "iconBefore": {
+          "name": "golden-site",
+          "highlight": true,
+          "width": 39,
+          "height": 46
+        }
+      }
+    ]
+  },
+  {
+    "title": "WOW Awards",
+    "link": "#",
+    "quantity": "2",
+    "decorations": [
+      {
+        "word": "Awards",
+        "iconBefore": {
+          "name": "wow-awards",
+          "highlight": true,
+          "width": 47,
+          "height": 24
+        }
+      }
+    ]
+  }
+]

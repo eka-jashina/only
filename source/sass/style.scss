@@ -1,0 +1,36 @@
+// VENDOR
+@import "vendor/normalize";
+
+// COMMON
+@import "common/fonts";
+@import "common/variables";
+@import "common/functions";
+@import "common/mixins";
+@import "common/global";
+
+// BLOCKS
+@import "blocks/button";
+@import "blocks/carousel";
+@import "blocks/word-decor";
+@import "blocks/slider";
+@import "blocks/keyframes";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/section";
+@import "blocks/hero";
+@import "blocks/awards-list";
+@import "blocks/slogan";
+@import "blocks/contacts";
+@import "blocks/presentation";
+@import "blocks/portfolio";
+@import "blocks/standart-project";
+@import "blocks/clients";
+@import "blocks/projects";
+@import "blocks/large-project";
+@import "blocks/banners";
+@import "blocks/banner";
+@import "blocks/awards";
+@import "blocks/prizes";
+@import "blocks/achievements";
+@import "blocks/footer";
+@import "blocks/socials";

@@ -1,0 +1,64 @@
+.nav {
+  @include tablet {
+    position: absolute;
+    top: 100%;
+    z-index: 99;
+
+    display: block;
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+
+    opacity: 0;
+    pointer-events: none;
+    background-color: #f1f1f1;
+
+    transform: translateX(-400px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &--shown {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: vw(32);
+
+  @include tablet {
+    flex-direction: column;
+    gap: 10px;
+
+    @include mobile {
+      gap: 15px;
+    }
+  }
+}
+
+.nav__link {
+  @include link-reset;
+  @include link-effects;
+
+  font-family: $primary-font;
+  font-size: fluid-font(13);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  @include mobile {
+    font-size: 24px;
+  }
+}

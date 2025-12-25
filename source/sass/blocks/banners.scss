@@ -1,0 +1,9 @@
+.banners__list {
+  @include list-reset;
+
+  display: flex;
+
+  @include large-mobile {
+    display: none;
+  }
+}

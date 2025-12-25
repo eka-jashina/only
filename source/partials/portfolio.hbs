@@ -1,0 +1,38 @@
+<section class="section portfolio">
+  <div class="container">
+    <div class="section__head portfolio__head">
+      <h2 class="section__title">Проекты</h2>
+      <div class="section__description portfolio__description">
+        <p>Аналитика, брендинг и&nbsp;разработка для B2B</p>
+        <p>Обеспечиваем компании лучшими техническими и&nbsp;дизайн-решениями, создавая digital-проекты.</p>
+      </div>
+    </div>
+    <div class="portfolio__content">
+      <h3>Крупнейшие компании</h3>
+      <ul class="portfolio__list scroll-container">
+        {{#each largestCompanies}}
+          <li class="portfolio__item">
+            {{> standart-project-card this}}
+          </li>
+        {{/each}}
+      </ul>
+      <h3>Девелоперы</h3>
+      <ul class="portfolio__list scroll-container">
+        {{#each developers}}
+          <li class="portfolio__item">
+            {{> standart-project-card this}}
+          </li>
+        {{/each}}
+      </ul>
+      <h3>B2C</h3>
+      <ul class="portfolio__list scroll-container">
+        {{#each b2c}}
+          <li class="portfolio__item">
+            {{> standart-project-card this}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <a class="portfolio__more button" href="">все проекты</a>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<a class="portfolio__link standart-project" href="{{link}}">
+  <article class="standart-project__card">
+    <div class="standart-project__content">
+      <h4>{{title}}</h4>
+      <p>{{description}}</p>
+    </div>
+    <div class="standart-project__img scale-img" style="--img-w: 446">
+      <picture>
+        <source width="446" height="450" type="image/webp"
+          srcset="img/content/standart-projects/{{img}}.webp 1x, img/content/standart-projects/{{img}}@2x.webp 2x">
+        <img src="img/content/standart-projects/{{img}}.jpg" srcset="img/content/standart-projects/{{img}}@2x.jpg" width="446"
+          height="450" alt="Пример фирменного стиля" loading="lazy" aria-hidden="true">
+      </picture>
+    </div>
+  </article>
+</a>

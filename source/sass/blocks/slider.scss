@@ -1,0 +1,68 @@
+.slider {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.slider__track {
+  will-change: transform;
+}
+
+.slider__slide {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.slider__slide a {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.slider__slide--active a {
+  visibility: visible;
+  pointer-events: all;
+}
+
+.slider__pagination {
+  position: absolute;
+  bottom: vw(40);
+  left: vw(40);
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: vw(10);
+  width: fit-content;
+  pointer-events: auto;
+
+  @include tablet {
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin: 0 auto;
+  }
+}
+
+.slider__bullet {
+  @include button-reset;
+
+  width: vw(10);
+  height: vw(10);
+
+  background-color: #0e0e0e;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+    transform: scale(1.3);
+  }
+}
