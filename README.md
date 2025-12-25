@@ -1,9 +1,9 @@
 Проект, выполненный в рамках чемпиона по вёрстке от HTML Academy
 Автор - Екатерина Яшина
 
-Шрифт: TypeType[https://typetype.ru/]
-Дизайн, макет: Only[https://only.digital/]
-Организатор: htmlacademy.ru/
+- Шрифт: [TypeType](https://typetype.ru/)
+- Дизайн, макет: [Only](https://only.digital/)
+- Организатор: [Html Academy](http://htmlacademy.ru/)
 
 ## Начало работы
 
